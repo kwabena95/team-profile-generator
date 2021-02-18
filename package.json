@@ -1,0 +1,30 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "## Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person. ",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "inquirer": "^7.3.3",
+    "jest": "^26.6.3",
+    "npm-install-global": "^1.0.0"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kwabena95/team-profile-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kwabena95/team-profile-generator/issues"
+  },
+  "homepage": "https://github.com/kwabena95/team-profile-generator#readme"
+}
