@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    margin: 0 auto;
+    max-width: 75vw;
+    max-height: 100vh;
+    padding: 2rem;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E84756;
+}
+.header .title{
+    text-align: center;
+    color: #f4f4f4;
+}
+.main{
+    max-width: 100%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 300px;
+    height: 320px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px 0 rgb(207, 206, 206);
+    margin: 1rem;
+}
+.card .card-header{
+    width: 100%;
+    height: auto;
+    padding: .5rem;
+    background-color: #107FF7;
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.card-header .name{
+    font-weight: bold;
+}
+.card-header .job-title{
+    font-weight: 200;
+}
+.card .card-body{
+    width: 100%;
+    height: 79.7%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #F6F7F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-body .info{
+    width: 90%;
+    height: 60%;
+    background-color: #fff;
+    padding: 5px;
+    list-style: none;
+}
+.card-body .info .card-info{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 14px;
+    padding: .3rem 0;
+    text-transform: capitalize;
+}
+.card-body .info .card-id{
+    text-transform: uppercase;
+}
+.card-body .info .card-email a{
+    font-size: 12px;
+    margin-left: 3px;
+    text-decoration: none;
+    color: #659bda;
+}
+.card-body .info .card-info:nth-child(1),.card-body .info .card-info:nth-child(2){
+    border-bottom: 1px solid rgb(161, 161, 161);
+}
