@@ -5,35 +5,48 @@ const TeamMember = require('../lib/Team-member');
 
 
 const managerSection = (data) => {
-    const profileArr = TeamMember.this.profile;
+
     return `
-        ${profileArr.forEach(item => {
+        ${data.forEach(profile => {
+
+        // for (let prof in profile) {
 
         return `
 
-                <figure class="card">
-                <div class="card-header">
-                    <h3 class="${item.name}">Jared</h3>
-                    <h5 class="job-title">Manager</h5>
-                </div>
-        
-                <figcaption class="card-body">
-                    <ul class="info">
-                        <li class="card-info card-id">id: ${item.emp_ID}</li>
-                        <li class="card-info card-email">Email:<a href="mailto:${item.email}">
-                                ${item.email}</a>
-                        </li>
-                        <li class="card-info card-number">office number: ${item.officeNumber}</li>
-                    </ul>
-                </figcaption>
-    
+                    <figure class="card">
+                    <div class="card-header">
+                        <h3 class="name">${profile.Manager.name}</h3>
+                        <h5 class="job-title">Manager</h5>
+                    </div>
+            
+                    <figcaption class="card-body">
+                        <ul class="info">
+                            <li class="card-info card-id">id: ${profile.Manager.id}</li>
+                            <li class="card-info card-email">Email:<a href="mailto:${prof.Manager.email}">
+                                    ${profile.Manager.email}</a>
+                            </li>
+                            <li class="card-info card-number">office number: ${profile.Manager.officeNumber}</li>
+                        </ul>
+                    </figcaption>
+                
+                `
 
-            `
+        // }
 
     })}
-       
+
     `;
 };
+
+// const memberSection = (data) =>{
+
+//     return `
+
+
+
+//     `
+
+// };
 
 
 
@@ -50,7 +63,7 @@ const managerSection = (data) => {
 
 // function to generate an entire webpage
 
-const templateData = () => {
+const templateData = (data) => {
 
     return `
 
@@ -73,7 +86,7 @@ const templateData = () => {
                 </header>
         
                 <div class="main">
-                    ${managerSection()}
+                    ${managerSection(data)}
                 </div>
         
             </div>

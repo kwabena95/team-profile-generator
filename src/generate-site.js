@@ -5,7 +5,7 @@ const fs = require('fs');
 const writeFile = (data) => {
     return new Promise((resolve, reject) => {
 
-        fs.writeFile('../dist/index.html', data, err => {
+        fs.writeFile('./dist/index.html', data, err => {
 
             // check for error
             if (err) {
