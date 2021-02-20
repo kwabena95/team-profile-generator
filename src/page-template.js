@@ -5,48 +5,33 @@ const TeamMember = require('../lib/Team-member');
 
 
 const managerSection = (data) => {
-
-    return `
-        ${data.forEach(profile => {
-
-        // for (let prof in profile) {
+    const managers = data.map((prof => TeamMember));
+    managers.forEach(item => {
 
         return `
 
-                    <figure class="card">
-                    <div class="card-header">
-                        <h3 class="name">${profile.Manager.name}</h3>
-                        <h5 class="job-title">Manager</h5>
-                    </div>
-            
-                    <figcaption class="card-body">
-                        <ul class="info">
-                            <li class="card-info card-id">id: ${profile.Manager.id}</li>
-                            <li class="card-info card-email">Email:<a href="mailto:${prof.Manager.email}">
-                                    ${profile.Manager.email}</a>
-                            </li>
-                            <li class="card-info card-number">office number: ${profile.Manager.officeNumber}</li>
-                        </ul>
-                    </figcaption>
-                
-                `
+            <figure class="card">
+            <div class="card-header">
+                <h3 class="name">${item.name}</h3>
+                <h5 class="job-title">Manager</h5>
+            </div>
 
-        // }
+            <figcaption class="card-body">
+                <ul class="info">
+                    <li class="card-info card-id">id: ${item.id}</li>
+                    <li class="card-info card-email">Email:<a href="mailto:${item.email}">
+                            ${item.email}</a>
+                    </li>
+                    <li class="card-info card-number">office number: ${item.officeNumber}</li>
+                </ul>
+            </figcaption>
 
-    })}
+        `;
+    });
 
-    `;
-};
+    console.log('take a look', managers);
+}
 
-// const memberSection = (data) =>{
-
-//     return `
-
-
-
-//     `
-
-// };
 
 
 

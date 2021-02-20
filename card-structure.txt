@@ -1,0 +1,15 @@
+ <figure class="card">
+            <div class="card-header">
+                <h3 class="name">${prof.name}</h3>
+                <h5 class="job-title">Manager</h5>
+            </div>
+
+            <figcaption class="card-body">
+                <ul class="info">
+                    <li class="card-info card-id">id: ${prof.id}</li>
+                    <li class="card-info card-email">Email:<a href="mailto:${prof.email}">
+                            ${prof.email}</a>
+                    </li>
+                    <li class="card-info card-number">office number: ${prof.officeNumber}</li>
+                </ul>
+            </figcaption>
