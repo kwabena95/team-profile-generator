@@ -10,8 +10,8 @@ body{
 }
 .container{
     margin: 0 auto;
-    max-width: 75vw;
-    max-height: 100vh;
+    width: 75vw;
+    height: auto;
     padding: 2rem;
 }
 .header{
@@ -27,13 +27,12 @@ body{
     color: #f4f4f4;
 }
 .main{
-    max-width: 100%;
+    width: 100%;
     height: 100%;
     padding: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 }
 
 .card{
@@ -96,6 +95,7 @@ body{
     text-decoration: none;
     color: #659bda;
 }
-.card-body .info .card-info:nth-child(1),.card-body .info .card-info:nth-child(2){
+.card-body .info .card-info:nth-child(1),
+.card-body .info .card-info:nth-child(2){
     border-bottom: 1px solid rgb(161, 161, 161);
 }

@@ -1,53 +1,89 @@
-const Engineer = require('../lib/Engineer');
-const Intern = require('../lib/Intern');
-const Manager = require('../lib/Manager');
-const TeamMember = require('../lib/Team-member');
 
+const profileSection = (data) => {
 
-const managerSection = (data) => {
-    const managers = data.map((prof => TeamMember));
-    managers.forEach(item => {
+    let output = '';
 
-        return `
+    data.forEach(member => {
+
+        if (member.role === 'Manager') {
+
+            output += `
 
             <figure class="card">
-            <div class="card-header">
-                <h3 class="name">${item.name}</h3>
-                <h5 class="job-title">Manager</h5>
-            </div>
+                <div class="card-header">
+                    <h3 class="name">${member.name}</h3>
+                    <h5 class="job-title">${member.role}</h5>
+                </div>
+        
+                <figcaption class="card-body">
+                    <ul class="info">
+                        <li class="card-info card-id">id: ${member.id}</li>
+                        <li class="card-info card-email">Email:<a href="mailto:${member.email}">
+                                ${member.email}</a>
+                        </li>
+                        <li class="card-info card-number">office number: ${member.officeNumber}</li>
+                    </ul>
+                </figcaption>
+            </figure>
+            `;
 
-            <figcaption class="card-body">
-                <ul class="info">
-                    <li class="card-info card-id">id: ${item.id}</li>
-                    <li class="card-info card-email">Email:<a href="mailto:${item.email}">
-                            ${item.email}</a>
-                    </li>
-                    <li class="card-info card-number">office number: ${item.officeNumber}</li>
-                </ul>
-            </figcaption>
+        }
 
-        `;
+        if (member.role === 'Engineer') {
+
+            output += `
+
+            <figure class="card">
+                <div class="card-header">
+                    <h3 class="name">${member.name}</h3>
+                    <h5 class="job-title">${member.role}</h5>
+                </div>
+        
+                <figcaption class="card-body">
+                    <ul class="info">
+                        <li class="card-info card-id">id: ${member.id}</li>
+                        <li class="card-info card-email">Email:<a href="mailto:${member.email}">
+                                ${member.email}</a>
+                        </li>
+                        <li class="card-info card-number">office number: ${member.gitHub}</li>
+                    </ul>
+                </figcaption>
+            </figure>
+            `;
+
+        }
+
+        if (member.role === 'Intern') {
+
+            output += `
+                <figure class="card">
+                    <div class="card-header">
+                        <h3 class="name">${member.name}</h3>
+                        <h5 class="job-title">${member.role}</h5>
+                    </div>
+            
+                    <figcaption class="card-body">
+                        <ul class="info">
+                            <li class="card-info card-id">id: ${member.id}</li>
+                            <li class="card-info card-email">Email:<a href="mailto:${member.email}">
+                                    ${member.email}</a>
+                            </li>
+                            <li class="card-info card-number">School name: ${member.school}</li>
+                        </ul>
+                    </figcaption>
+                </figure>
+            `;
+
+        }
+
     });
+    return output;
 
-    console.log('take a look', managers);
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 // function to generate an entire webpage
-
 const templateData = (data) => {
 
     return `
@@ -71,7 +107,8 @@ const templateData = (data) => {
                 </header>
         
                 <div class="main">
-                    ${managerSection(data)}
+                    ${profileSection(data)}
+             
                 </div>
         
             </div>
