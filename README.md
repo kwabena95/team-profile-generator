@@ -1,7 +1,5 @@
 # Team Profile Generator
 
-  undefined
-
   ## Description
   A Node.js commandline application that allows a user to submit information about their team and then generate an html webpage based on that information to display a profile for each team member.
     
@@ -24,7 +22,7 @@
   * You have to clone the repository on to your local machine.
     
   ## Usage
-  ![./image/profile.png](./image/profile.png)
+  ![./images/profile.png](./images/profile.png)
 
   ./image-path
   For a video walk-through, please click on the link [https://youtu.be/LmZcIdd0ygA](https://youtu.be/LmZcIdd0ygA)
