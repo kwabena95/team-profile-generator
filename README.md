@@ -24,7 +24,6 @@
   ## Usage
   ![./images/profile.png](./images/profile.png)
 
-  ./image-path
   For a video walk-through, please click on the link [https://youtu.be/LmZcIdd0ygA](https://youtu.be/LmZcIdd0ygA)
 
   ## Features
