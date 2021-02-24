@@ -24,7 +24,7 @@
   * You have to clone the repository on to your local machine.
     
   ## Usage
-  ![./image/Screenshot.png](./image/Screenshot.png)
+  ![./image/profile.png](./image/profile.png)
 
   ./image-path
   For a video walk-through, please click on the link [https://youtu.be/LmZcIdd0ygA](https://youtu.be/LmZcIdd0ygA)
