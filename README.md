@@ -24,7 +24,7 @@
   ## Usage
   ![./images/profile.png](./images/profile.png)
 
-  For a video walk-through, please click on the link [https://youtu.be/LmZcIdd0ygA](https://youtu.be/LmZcIdd0ygA)
+  For a video walk-through, please click on the link [https://youtu.be/6JQF7C3CFa8](https://youtu.be/6JQF7C3CFa8)
 
   ## Features
   Team Profile Generator
